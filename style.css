@@ -5,6 +5,8 @@ body {
   font-family: "Figtree", sans-serif;
   background-color: hsl(47, 88%, 63%);
   color: hsl(0, 0%, 7%);
+  line-height: 150%;
+  letter-spacing: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,25 +16,60 @@ body {
 }
 div.card {
   background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 7%);
   border-radius: 20px;
   box-shadow: 8px 8px 0 hsl(0, 0%, 0%, 1.0);
   padding: 1.5rem;
-  max-width: 22rem;
+  width: 384px;
+}
+.illustration-wrapper {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 img.illustration {
   width: 100%;
-  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
 }
 span.category {
-  display: block;
+  background-color: hsl(47, 88%, 63%);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 0 12px;
+  border-radius: 4px;
+  display: inline-block;
 }
 time.publish-date {
   display: block;
 }
+h1.title {
+  font-size: 24px;
+}
+p.description {
+  color: hsl(0, 0%, 42%);
+  font-size: 16px;
+}
 div.author {
+  font-size: 14px;
+  font-weight: 800;
   display: inline-flex;
   align-items: center;
   gap: 1rem;
+}
+@media (max-width: 550px) {
+  div.card {
+    width: 327px;
+  }
+  span.category, time.publish-date {
+    font-size: 12px;
+  }
+  h1.title {
+    font-size: 20px;
+  }
+  p.description, div.author {
+    font-size: 14px;
+  }
 }
 .attribution {
   font-size: 0.6875rem;
