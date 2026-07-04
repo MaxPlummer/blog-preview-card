@@ -19,8 +19,11 @@ div.card {
   border: 1px solid hsl(0, 0%, 7%);
   border-radius: 20px;
   box-shadow: 8px 8px 0 hsl(0, 0%, 0%, 1.0);
-  padding: 1.5rem;
-  width: 384px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 380px;
+  gap: 24px;
 }
 .illustration-wrapper {
   height: 200px;
@@ -32,34 +35,47 @@ img.illustration {
   height: 200px;
   object-fit: cover;
 }
+div.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 span.category {
   background-color: hsl(47, 88%, 63%);
   font-size: 14px;
   font-weight: 800;
   padding: 0 12px;
   border-radius: 4px;
-  display: inline-block;
+  /* Background doesn't extend beyond the text */
+  width: fit-content;
 }
 time.publish-date {
   display: block;
 }
 h1.title {
   font-size: 24px;
+  margin: 0;
 }
 p.description {
   color: hsl(0, 0%, 42%);
   font-size: 16px;
+  margin: 0;
 }
 div.author {
   font-size: 14px;
   font-weight: 800;
   display: inline-flex;
   align-items: center;
-  gap: 1rem;
+  gap: 12px;
 }
+img.avatar {
+  width: 32px;
+  height: 32px;
+}
+/* Responsive design for smaller screens */
 @media (max-width: 550px) {
   div.card {
-    width: 327px;
+    width: 330px;
   }
   span.category, time.publish-date {
     font-size: 12px;
