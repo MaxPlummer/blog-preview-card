@@ -7,14 +7,15 @@ body {
   color: hsl(0, 0%, 7%);
   line-height: 150%;
   letter-spacing: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   gap: 2rem;
 }
-div.card {
+article.card {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid hsl(0, 0%, 7%);
   border-radius: 20px;
@@ -25,9 +26,10 @@ div.card {
   width: 330px;
   gap: 24px;
 }
-.illustration-wrapper {
+figure.illustration-wrapper {
   width: 100%;
   height: 200px;
+  margin: 0;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -36,7 +38,7 @@ img.illustration {
   height: 100%;
   object-fit: cover;
 }
-div.info {
+header.info {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -67,7 +69,7 @@ p.description {
   font-size: 14px;
   margin: 0;
 }
-div.author {
+footer.author {
   font-size: 14px;
   font-weight: 800;
   display: inline-flex;
