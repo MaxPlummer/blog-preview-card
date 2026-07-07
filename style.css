@@ -82,7 +82,7 @@ img.avatar {
 }
 /* Responsive design for larger screens */
 @media (min-width: 550px) {
-  div.card {
+  article.card {
     width: 380px;
   }
   span.category, time.publish-date {
